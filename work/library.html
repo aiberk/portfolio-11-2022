@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <title>Tulip Library Part II: Making the Library</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name="next-head-count" content="4" />
+    <link
+      rel="preload"
+      href="/_next/static/css/2f26bb9842d84a608fa3.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/2f26bb9842d84a608fa3.css"
+      data-n-g=""
+    />
+    <noscript data-n-css=""></noscript>
+    <link
+      rel="preload"
+      href="/_next/static/chunks/main-fafcd519715c9f24267c.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/framework.abffcf18e526b7c0dbcd.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.2ec719ca00a4415f4f85.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/pages/_app-cf2d0a2d63ed93152c22.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/95c6fdb7a978a3df0c40c1adcc8695e1583f75b6.40c70ce3bc51d3491f25.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/chunks/pages/work/library-6ff85b3fe59367d10040.js"
+      as="script"
+    />
+    <style data-styled="" data-styled-version="5.2.1">
+      * ::selection {
+        background: none;
+      } /*!sc*/
+      body {
+        padding: 0;
+        margin: 0 0 0 0;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif sans-serif;
+        color: rgb(32, 32, 32);
+      } /*!sc*/
+      @media (max-width: 1100px) {
+        p {
+          padding: 0 1rem 0 1rem !important;
+        }
+      } /*!sc*/
+      data-styled.g1[id="sc-global-cCKFnm1"] {
+        content: "sc-global-cCKFnm1,";
+      } /*!sc*/
+      .evabPW {
+        position: fixed;
+        background: rgba(255, 255, 255, 1);
+        z-index: 99999999;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif sans-serif !important !important;
+        width: 100%;
+        height: 60px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      } /*!sc*/
+      @media (max-width: 1100px) {
+      } /*!sc*/
+      .evabPW div {
+        max-width: 1100px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      } /*!sc*/
+      .evabPW ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        list-style-type: none;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif sans-serif !important !important;
+      } /*!sc*/
+      @media (max-width: 1100px) {
+        .evabPW ul {
+          margin-right: 1rem;
+          -webkit-box-pack: end !important;
+          -webkit-justify-content: flex-end !important;
+          -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+        }
+      } /*!sc*/
+      .evabPW li {
+        margin: 0 0 0 2rem;
+        padding: 10px 2px;
+        cursor: pointer;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif sans-serif !important !important;
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.8);
+      } /*!sc*/
+      .evabPW li:hover {
+        color: rgba(0, 0, 0, 1);
+      } /*!sc*/
+      @media (max-width: 800px) {
+        .evabPW li {
+          display: none;
+        }
+      } /*!sc*/
+      data-styled.g6[id="NavBar__Nav-qvji2p-0"] {
+        content: "evabPW,";
+      } /*!sc*/
+      .bbnDTc {
+        color: rgba(0, 0, 0, 0.6);
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif;
+      } /*!sc*/
+      .bbnDTc:hover {
+        color: rgba(0, 0, 0, 1);
+      } /*!sc*/
+      data-styled.g8[id="NavBar__NavLink-qvji2p-2"] {
+        content: "bbnDTc,";
+      } /*!sc*/
+      .ciSvqi {
+        font-size: 0.9rem;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif;
+        background: #2d7ff9;
+        color: white;
+        border-radius: 50px;
+        padding: 0.6rem 0.8rem 0.6rem 0.8rem !important;
+        border: 1px solid #2d7ff9;
+        margin-left: 20px;
+        cursor: pointer;
+        opacity: 1;
+      } /*!sc*/
+      .ciSvqi:hover {
+        opacity: 0.9;
+      } /*!sc*/
+      @media (max-width: 550px) {
+        .ciSvqi {
+          padding: 0.5rem 0.8rem 0.5rem 0.8rem !important;
+        }
+      } /*!sc*/
+      data-styled.g9[id="NavBar__Button-qvji2p-3"] {
+        content: "ciSvqi,";
+      } /*!sc*/
+      .OvHqz {
+        font-size: 1rem;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.8);
+        border-radius: 50px 50px 50px 50px;
+        padding: 5px 12px 6px 12px !important;
+        cursor: pointer;
+        color: gray;
+      } /*!sc*/
+      .OvHqz:hover {
+        color: rgba(0, 0, 0, 1);
+      } /*!sc*/
+      @media (max-width: 750px) {
+        .OvHqz span {
+          display: none;
+        }
+      } /*!sc*/
+      data-styled.g10[id="NavBar__SiteIcon-qvji2p-4"] {
+        content: "OvHqz,";
+      } /*!sc*/
+      .cCkRtL {
+        width: 720px;
+        padding: 20px 0 20px 0;
+        z-index: 1;
+      } /*!sc*/
+      @media (max-width: 750px) {
+        .cCkRtL span {
+          display: none;
+        }
+      } /*!sc*/
+      data-styled.g17[id="Hero__TitleWrapper-sc-1jieon9-3"] {
+        content: "cCkRtL,";
+      } /*!sc*/
+      .hWQYbi {
+        text-align: left;
+      } /*!sc*/
+      @media (max-width: 750px) {
+        .hWQYbi {
+          font-size: 2rem !important;
+          text-align: center;
+        }
+      } /*!sc*/
+      data-styled.g18[id="Hero__H1-sc-1jieon9-4"] {
+        content: "hWQYbi,";
+      } /*!sc*/
+      .hoHDIR {
+        height: 70vh;
+        margin-bottom: 30px;
+      } /*!sc*/
+      @media (max-width: 750px) {
+        .hoHDIR {
+          height: 300px;
+        }
+      } /*!sc*/
+      data-styled.g19[id="Hero__HeroArea-sc-1jieon9-5"] {
+        content: "hoHDIR,";
+      } /*!sc*/
+      .jUcdre {
+        margin-top: 50px;
+        color: black;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif;
+      } /*!sc*/
+      .jUcdre div {
+        max-width: 1100px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif;
+      } /*!sc*/
+      .jUcdre ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 200px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        list-style-type: none;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif;
+      } /*!sc*/
+      .jUcdre ico {
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif;
+      } /*!sc*/
+      @media (max-width: 1100px) {
+        .jUcdre {
+          padding: 0 1rem 0 1rem !important;
+        }
+      } /*!sc*/
+      data-styled.g20[id="Footer__Nav-ngepyr-0"] {
+        content: "jUcdre,";
+      } /*!sc*/
+      .cVfbaZ {
+        height: 20px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100%;
+        width: 20rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        cursor: pointer;
+      } /*!sc*/
+      .cVfbaZ:hover {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+      } /*!sc*/
+      data-styled.g23[id="BackNext__NavLink-sc-1q0xxhp-0"] {
+        content: "cVfbaZ,";
+      } /*!sc*/
+      .eXyyZh {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      } /*!sc*/
+      data-styled.g24[id="BackNext__Navlinka-sc-1q0xxhp-1"] {
+        content: "eXyyZh,";
+      } /*!sc*/
+      .bVLWdU {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+      } /*!sc*/
+      .bVLWdU div {
+        max-width: 800px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-text: left;
+        -ms-flex-line-packalign-text: left;
+        align-text: left;
+      } /*!sc*/
+      .bVLWdU h1 {
+        max-width: 720px;
+        width: 100%;
+        font-size: 2.8rem;
+        font-weight: 400;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif !important;
+      } /*!sc*/
+      .bVLWdU p {
+        line-height: 35px;
+        vertical-align: baseline;
+        -webkit-letter-spacing: normal;
+        -moz-letter-spacing: normal;
+        -ms-letter-spacing: normal;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 1rem;
+        max-width: 720px;
+        font-weight: 400;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI",
+          "Helvetica Neue", Arial, sans-serif, sans-serif;
+      } /*!sc*/
+      .bVLWdU li {
+        margin-bottom: 1rem;
+      } /*!sc*/
+      data-styled.g25[id="library__TopBlock-inl1y7-0"] {
+        content: "bVLWdU,";
+      } /*!sc*/
+      .fhPSnj {
+        width: 100%;
+        max-width: 1100px;
+      } /*!sc*/
+      data-styled.g27[id="library__Image-inl1y7-2"] {
+        content: "fhPSnj,";
+      } /*!sc*/
+    </style>
+  </head>
+  <body>
+    <div id="__next">
+      <nav class="NavBar__Nav-qvji2p-0 evabPW">
+        <div>
+          <a
+            style="text-decoration: none"
+            href="http://abyiber.com/"
+            class="NavBar__SiteIcon-qvji2p-4 OvHqz"
+            >Aby Iberkleid <span>- Front End Developer &amp; Designer</span></a
+          >
+          <ul>
+            <li>
+              <a
+                style="
+                  font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                    'Helvetica Neue', Arial, sans-serif sans-serif !important;
+                "
+                href="http://www.abyiber.com/"
+                target=""
+                class="NavBar__NavLink-qvji2p-2 bbnDTc"
+                >Work</a
+              >
+            </li>
+            <li>
+              <a
+                style="
+                  font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                    'Helvetica Neue', Arial, sans-serif sans-serif !important;
+                "
+                href="http://www.abyiber.com/about.html"
+                target=""
+                class="NavBar__NavLink-qvji2p-2 bbnDTc"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                style="
+                  font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                    'Helvetica Neue', Arial, sans-serif sans-serif !important;
+                "
+                href="https://drive.google.com/file/d/1UGhHxeKVb3WeQnIRbH4PtaSayBNiQQJ9/view?usp=sharing"
+                target="_blank"
+                class="NavBar__NavLink-qvji2p-2 bbnDTc"
+                >Resume</a
+              >
+            </li>
+            <a
+              style="text-decoration: none"
+              href="mailto:abrahamiberkleid@gmail.com"
+              class="NavBar__Button-qvji2p-3 ciSvqi"
+              >Let&#x27;s Chat</a
+            >
+          </ul>
+        </div>
+      </nav>
+      <div
+        style="
+          padding: 40px 0 0px 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: row-reverse;
+          align-items: flex-end;
+          background-image: url(http://abyiber.com/2021_Assets/libHero.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="Hero__HeroArea-sc-1jieon9-5 hoHDIR"
+      >
+        <div
+          style="
+            background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(0, 0, 0, 0) 50%
+            );
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+          "
+        ></div>
+        <div class="Hero__TitleWrapper-sc-1jieon9-3 cCkRtL">
+          <h1
+            style="
+              color: white;
+              padding: 0 0 0 0;
+              margin: 0 0 2rem 0;
+              font-weight: 500;
+              width: 100%;
+              max-width: 720px;
+              font-size: 3.8rem;
+              font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                'Helvetica Neue', Arial, sans-serif !important;
+            "
+            class="Hero__H1-sc-1jieon9-4 hWQYbi"
+          >
+            Tulip Library Part II: Making the Library
+          </h1>
+        </div>
+      </div>
+      <div class="library__TopBlock-inl1y7-0 bVLWdU">
+        <div style="padding: 40px 0 0 0"></div>
+        <p>
+          Tulip Interfaces is a B2B SaaS platform for manufacturing. The core
+          use case of Tulip is to empower companies by capturing as much data as
+          possible, to then analyze and optimize their operations. The Tulip
+          ecosystem is composed of four parts:
+        </p>
+        <div style="display: flex; width: 100%; max-width: 720px">
+          <ul
+            style="
+              align-self: flex-start;
+              font-size: 1rem;
+              font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                'Helvetica Neue', Arial, sans-serif, sans-serif !important;
+            "
+          >
+            <li
+              style="
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif sans-serif !important !important;
+              "
+            >
+              A No Code Visual App builder - to build manufacturing apps.
+            </li>
+            <li
+              style="
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif sans-serif !important !important;
+              "
+            >
+              An App Player - to use apps built in App builder and capture
+              operator data.
+            </li>
+            <li
+              style="
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif sans-serif !important !important;
+              "
+            >
+              A Machine Monitoring Hub - to acquire machine data from sensors.
+            </li>
+            <li
+              style="
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif sans-serif !important !important;
+              "
+            >
+              A Digital Factory Dashboard - to view and analyze collected data.
+            </li>
+          </ul>
+        </div>
+        <p style="margin-top: 2rem">
+          The creation of the Tulip library was a significant undertaking which
+          required a cross-collaborative effort between Marketing, CustomerOps,
+          Engineering, and Design at an unprecedented scale. In the span of 3
+          months the team shipped Library V.0 December 2020. I was tasked with
+          designing the library experience, and building the public facing
+          website.
+        </p>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            max-width: 550px;
+            padding: 20px;
+            align-items: flex-start;
+          "
+        >
+          <img
+            style="padding: 20px"
+            src="http://abyiber.com/2021_Assets/lh.png"
+            class="library__Image-inl1y7-2 fhPSnj"
+          /><img
+            style="padding: 20px"
+            src="http://abyiber.com/2021_Assets/li.png"
+            class="library__Image-inl1y7-2 fhPSnj"
+          />
+        </div>
+      </div>
+      <div class="library__TopBlock-inl1y7-0 bVLWdU">
+        <br /><br />
+        <p>
+          The Research and Discovery phase of this project consisted of
+          gathering requirements from the different stakeholders. During this
+          phase I conducted interviews and group brainstorms with members of the
+          Marketing, and Customer Ops teams to create a list of user stories and
+          business requirements such as our SEO strategy and content copy.
+        </p>
+        <br /><br />
+        <p>
+          Once we had the requirements as a guide, I started iterating on
+          mockups and building live prototypes to get feedback from the
+          aforementioned stakeholders. During this process we discussed what was
+          feasible for this project given our existing engineering and resource
+          constraints. This , along with our ambitious timeline, led us to
+          shorten the scope of our task and aim for a minimal viable product
+          (MVP). Some of the many problems we encountered during this phase
+          involved restructuring our data model and minimizing the time app
+          authors needed to spend to input content into the library.<!-- -->
+        </p>
+        <br /><br />
+        <p>
+          Once our Research and Discovery phase was complete, and the decision
+          to lower the project&#x27;s scope was taken, I worked on streamlined
+          designs for mobile and desktop. In addition to designing the Library
+          UI on the public facing website, a major part of the design work was
+          designing the UI in the apps housed in the library. More on that here.
+        </p>
+        <br /><br />
+        <p>
+          Once the designs were finalized I was tasked with translating them
+          into code using HTML, CSS, JS, React, and NextJS in agile sprints.
+          This stack was chosen to optimize for SEO, speed, and ease of
+          continuous deployment
+        </p>
+        <br /><br />
+        <p>
+          After 3 months of grueling work and multiple iterations, on December
+          10th, 2020 we launched the library to much success. We surpassed our
+          objective of achieving an 80% SEO score or higher on Google’s
+          Lighthouse. Our board of directors and investors were all blown away
+          by how fast we were able to get this into production and by the final
+          results level of polish .They commented that having the Tulip Library
+          made Tulip more valuable and as a result that we needed to adapt our
+          pricing structure to factor in its added value.<!-- -->
+        </p>
+        <br /><br />
+        <p>
+          Since its launch the Tulip Library has seen over 1,000 daily users and
+          expanded Marketing’s funnel. It goes without saying that an
+          achievement of this magnitude could not have been accomplished had it
+          not been for the fantastic team that worked tirelessly to bring the
+          concept into life. It&#x27;s projects like this that make the proverb<!-- -->
+          <span style="font-style: italic"
+            >“If you want to go fast, go alone. If you want to go far, go
+            together”</span
+          >ring true.
+        </p>
+      </div>
+      <br />
+      <div
+        style="
+          padding: 40px 0 0 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            max-width: 720px;
+          "
+        >
+          <div class="BackNext__NavLink-sc-1q0xxhp-0 cVfbaZ">
+            <a
+              style="
+                padding: 20px 40px;
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif !important;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.8);
+              "
+              href="http://www.abyiber.com/work/guidelines.html"
+              class="BackNext__Navlinka-sc-1q0xxhp-1 eXyyZh"
+              >◀️ Previous</a
+            >
+          </div>
+          <div class="BackNext__NavLink-sc-1q0xxhp-0 cVfbaZ">
+            <a
+              style="
+                padding: 20px 40px;
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif !important;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.8);
+              "
+              href="http://www.abyiber.com/work/player.html"
+              class="BackNext__Navlinka-sc-1q0xxhp-1 eXyyZh"
+              >Next ▶</a
+            >
+          </div>
+        </div>
+      </div>
+      <nav class="Footer__Nav-ngepyr-0 jUcdre">
+        <div>
+          <div></div>
+          <ul>
+            <a
+              style="
+                text-decoration: none;
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif;
+              "
+              href=""
+            ></a
+            ><a
+              style="
+                text-decoration: none;
+                font-family: system-ui, -apple-system, system-ui, 'Segoe UI',
+                  'Helvetica Neue', Arial, sans-serif;
+              "
+              href=""
+            ></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/work/library",
+        "query": {},
+        "buildId": "eN5Ca8-86TnZ6p8-4BZ04",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false
+      }
+    </script>
+    <script
+      nomodule=""
+      src="/_next/static/chunks/polyfills-28654a8145d7603786fc.js"
+    ></script>
+    <script
+      src="/_next/static/chunks/main-fafcd519715c9f24267c.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/framework.abffcf18e526b7c0dbcd.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.2ec719ca00a4415f4f85.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/pages/_app-cf2d0a2d63ed93152c22.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/95c6fdb7a978a3df0c40c1adcc8695e1583f75b6.40c70ce3bc51d3491f25.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/pages/work/library-6ff85b3fe59367d10040.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/eN5Ca8-86TnZ6p8-4BZ04/_buildManifest.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/eN5Ca8-86TnZ6p8-4BZ04/_ssgManifest.js"
+      async=""
+    ></script>
+  </body>
+</html>
